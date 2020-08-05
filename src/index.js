@@ -7,7 +7,7 @@ import Routes from '~/routes';
 
 const App = () => (
   <>
-    {/* definindo cor padrão da status bar */}
+    {/* definindo cor padrão da status bar no android */}
     <StatusBar barStyle="light-content" backgroundColor="#8b10ae" />
     <Routes />
   </>
