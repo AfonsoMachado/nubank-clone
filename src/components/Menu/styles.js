@@ -7,7 +7,7 @@ export const Container = styled.ScrollView`
 
 export const Code = styled.View`
   background: #fff;
-  padding: 5px;
+  padding: 4px;
   align-self: center;
 `;
 
@@ -31,4 +31,20 @@ export const NavText = styled.Text`
   font-size: 15px;
   color: #fff;
   margin-left: 20px;
+`;
+
+export const SignOutButton = styled.TouchableOpacity`
+  border-width: ${StyleSheet.hairlineWidth}px;
+  border-color: rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  margin-top: 15px;
+`;
+
+export const SignOutButtonText = styled.Text`
+  color: #fff;
+  font-weight: bold;
+  font-size: 13px;
 `;

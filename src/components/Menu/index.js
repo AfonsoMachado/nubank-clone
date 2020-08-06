@@ -2,7 +2,15 @@ import React from 'react';
 import QRCode from 'react-native-qrcode-svg';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
-import {Container, Code, Nav, NavItem, NavText} from './styles';
+import {
+  Container,
+  Code,
+  Nav,
+  NavItem,
+  NavText,
+  SignOutButton,
+  SignOutButtonText,
+} from './styles';
 
 export default function Menu() {
   return (
@@ -38,6 +46,10 @@ export default function Menu() {
           <NavText>Configurações do app</NavText>
         </NavItem>
       </Nav>
+
+      <SignOutButton onPress={() => {}}>
+        <SignOutButtonText>SAIR DA CONTA</SignOutButtonText>
+      </SignOutButton>
     </Container>
   );
 }
