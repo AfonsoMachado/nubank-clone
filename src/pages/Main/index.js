@@ -1,6 +1,9 @@
 import React from 'react';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
+import { Animated } from 'react-native';
+import { PanGestureHandler } from 'react-native-gesture-handler';
+
 import Header from '~/components/Header';
 import Tabs from '~/components/Tabs';
 import Menu from '~/components/Menu';
