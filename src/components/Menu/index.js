@@ -40,10 +40,10 @@ export default function Menu({translateY}) {
           <Icon name="person-outline" size={20} color="#fff" />
           <NavText>Perfil</NavText>
         </NavItem>
-        <NavItem>
+        {/* <NavItem>
           <Icon name="attach-money" size={20} color="#fff" />
           <NavText>Configurar conta</NavText>
-        </NavItem>
+        </NavItem> */}
         <NavItem>
           <Icon name="credit-card" size={20} color="#fff" />
           <NavText>Configurar cartão</NavText>

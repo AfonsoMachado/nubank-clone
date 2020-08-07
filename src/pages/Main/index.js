@@ -108,7 +108,8 @@ export default function Main() {
             </CardContent>
             <CardFooter>
               <Annotation>
-                Transferência de R$ 20,00 recebida de Fulano hoje às 06:00h
+                Transferência de R$ 20,00 recebida de Fulano de Souza Santos
+                hoje às 06:00h
               </Annotation>
             </CardFooter>
           </Card>
