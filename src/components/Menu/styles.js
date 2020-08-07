@@ -1,7 +1,7 @@
-import {StyleSheet} from 'react-native';
+import {StyleSheet, Animated} from 'react-native';
 import styled from 'styled-components/native';
 
-export const Container = styled.ScrollView`
+export const Container = styled(Animated.ScrollView)`
   margin: 0 30px;
 `;
 
@@ -12,7 +12,7 @@ export const Code = styled.View`
 `;
 
 export const Nav = styled.View`
-  width: 100%;
+  /* width: 100%; */
   margin-top: 30px;
   /* menor que 1px */
   border-top-width: ${StyleSheet.hairlineWidth}px;
@@ -40,7 +40,7 @@ export const SignOutButton = styled.TouchableOpacity`
   justify-content: center;
   align-items: center;
   padding: 12px;
-  margin-top: 15px;
+  margin-top: 14px;
 `;
 
 export const SignOutButtonText = styled.Text`

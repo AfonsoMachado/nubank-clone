@@ -1,35 +1,49 @@
 import React from 'react';
-import { RectButton } from 'react-native-gesture-handler';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-import { Container, TabsContainer, TabItem, TabText, styles } from './styles';
+import {Container, TabsContainer, TabItem, TabText} from './styles';
 
-function Tabs() {
+export default function Tabs({translateY}) {
   return (
-    <Container>
+    <Container
+      style={{
+        // a medida que mexe no bloco principal, as tags tambem abaixam um pouco
+        transform: [
+          {
+            translateY: translateY.interpolate({
+              inputRange: [0, 380],
+              outputRange: [0, 30],
+              extrapolate: 'clamp',
+            }),
+          },
+        ],
+        opacity: translateY.interpolate({
+          inputRange: [0, 380],
+          outputRange: [1, 0.3],
+          extrapolate: 'clamp',
+        }),
+      }}>
       <TabsContainer style={TabItem}>
-        <RectButton style={styles.b}>
+        <TabItem>
           <Icon name="person-add" size={24} color="#FFF" />
           <TabText>Indicar amigos</TabText>
-        </RectButton>
-        <RectButton style={styles.b}>
+        </TabItem>
+        <TabItem>
           <Icon name="chat-bubble-outline" size={24} color="#FFF" />
           <TabText>Cobrar</TabText>
-        </RectButton>
-        <RectButton style={styles.b}>
+        </TabItem>
+        <TabItem>
           <Icon name="arrow-downward" size={24} color="#FFF" />
           <TabText>Depositar</TabText>
-        </RectButton>
-        <RectButton style={styles.b}>
+        </TabItem>
+        <TabItem>
           <Icon name="arrow-upward" size={24} color="#FFF" />
           <TabText>Transferir</TabText>
-        </RectButton>
-        <RectButton style={styles.b}>
+        </TabItem>
+        <TabItem>
           <Icon name="lock" size={24} color="#FFF" />
           <TabText>Bloquear cartão</TabText>
-        </RectButton>
+        </TabItem>
       </TabsContainer>
     </Container>
   );
 }
-
-export default Tabs;
