@@ -1,1 +1,1 @@
-![](https://i.imgur.com/EH9JRne.mp4)
+![](https://github.com/AfonsoMachado/nubank-clone/blob/master/nur.gif)
