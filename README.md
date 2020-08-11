@@ -31,6 +31,6 @@ $ yarn android
 $ yarn ios
 ```
 
-## Resultado
+## :white_check_mark: Resultado
 
 ![](https://github.com/AfonsoMachado/nubank-clone/blob/master/nur.gif)
